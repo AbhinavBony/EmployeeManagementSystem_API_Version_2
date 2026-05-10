@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;
     @Column(name = "Employee_Id", nullable = false, unique = true)
     private Integer empId;
